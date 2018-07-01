@@ -11,6 +11,7 @@ import argparse
 parser=argparse.ArgumentParser()
 parser.add_argument('--build', '-b', action='store_true')
 parser.add_argument('--run', '-r', action='store_true')
+parser.add_argument('--interact', '-i', action='store_true')
 args=parser.parse_args()
 
 if args.build:
@@ -19,3 +20,6 @@ if args.build:
 
 if args.run:
 	invoke('mix phx.server')
+
+if args.interact:
+	invoke('iex -S mix phx.server')
