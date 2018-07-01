@@ -37,6 +37,7 @@ defmodule Pepperup.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:httpoison, "~> 1.0"},
+      {:distillery, "~> 1.0.0"},
     ]
   end
 end
