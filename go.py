@@ -13,6 +13,7 @@ parser.add_argument('--build', '-b', action='store_true')
 parser.add_argument('--run', '-r', action='store_true')
 parser.add_argument('--interact', '-i', action='store_true')
 parser.add_argument('--gigalixir-git', action='store_true')
+parser.add_argument('--gigalixir-logs', '-l', action='store_true')
 args=parser.parse_args()
 
 if args.build:
@@ -27,3 +28,6 @@ if args.interact:
 
 if args.gigalixir_git:
 	print('https://git.gigalixir.com/monstrous-alert-nurseshark.git/')
+
+if args.gigalixir_logs:
+	invoke('gigalixir logs monstrous-alert-nurseshark')
