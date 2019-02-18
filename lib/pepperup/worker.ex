@@ -17,7 +17,7 @@ defmodule Pepperup.Worker do
     Logger.info "working"
 
     {:ok, _} = HTTPoison.start
-    response = HTTPoison.get! "https://stark-mesa-98224.herokuapp.com/"
+    response = HTTPoison.get! "https://dans-scraper.herokuapp.com/"
     Logger.info "response: #{inspect response}"
 
     Process.send_after(self(), :work, 4*60*60*1000)

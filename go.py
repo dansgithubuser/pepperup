@@ -34,4 +34,4 @@ if args.gigalixir_deploy:
 	invoke('git push -f gigalixir master')
 
 if args.gigalixir_logs:
-	invoke('gigalixir logs monstrous-alert-nurseshark')
+	invoke('gigalixir logs -a monstrous-alert-nurseshark')
